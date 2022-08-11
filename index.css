@@ -1,0 +1,555 @@
+body{
+margin: 0;
+background: hsl(0, 0%, 90%);
+font-family: sans-serif;
+}
+/* for nav header */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 40px;
+    width: auto;
+    overflow: hidden;
+}
+.main1{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between;
+    width: auto;
+}
+#open,#close{
+    display: none;
+}
+#open{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main1 ol{
+    display: flex;
+    gap: 10px;
+}
+.main1 ol li{
+    list-style-type: none;
+    font-size: .9rem;
+    padding: 10px;
+}
+.main1 ol li a{
+    text-decoration: none;
+    color: black;
+}
+#down{
+    max-width: 90%;
+    height:8px;
+}
+#up{
+    max-width: 90%;
+    height:8px;
+    display: none;
+}
+.main2{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#regis{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.main2 a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-weight: bold;
+}
+.nav1, .nav2, .nav4{
+    font-weight: bold;
+}
+.nav3{
+    color: rgba(0,0,0,.5) !important;
+}
+.main11{
+    margin-left: -40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    display: none;
+    align-items: center;
+    position: absolute;
+    transition: 30s ease;
+    background:  hsl(0, 0%, 98%);
+}
+ .main11 ul{
+    display: block;
+} 
+.main1 ol li:hover .main11{
+    display: flex;
+    position: absolute;
+} 
+.overlay{
+    width: 100%;
+}
+.main1 ol li:hover .main12{
+    display: flex;
+    position: absolute;
+    transition: 10s ease;
+}
+.main11 ul {
+    padding: 5px 10px;
+}
+.main11 ul li{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.main12{
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    display: none;
+    position: absolute;
+    align-items: center;
+    border-radius: 10px;
+    background:  hsl(0, 0%, 98%);
+}
+.main12 ul {
+    padding: 5px 10px;
+}
+.main12 ul li{
+    padding: 5px;
+}
+#a1{
+    padding-left: 2px;
+}
+#a3{
+    padding-left: 4px;
+}
+#a4{
+    padding-left: 2px;
+}
+#navimage{
+    max-width: 100%;
+    margin-right: 7px;
+}
+/* for nav header ends here */
+/* @media for nav header */
+
+@media all and (max-width:755px){
+    .main1{
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        overflow-x:hidden; 
+        width: 0%;
+        height: 100vh;
+        transition: .5s;
+        background: hsl(0, 0%, 90%);
+    }
+    .main1::-webkit-scrollbar{
+        display: none;
+    }
+    .main11{
+        margin-left: -10px;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        right: 20%;
+        top: 10px;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .main2{
+        flex-direction: column;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+    .overlay{
+        width: 0%;
+        height: 100%;
+        background: rgba(0,0,0,.7);
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: .5s;
+    }
+    .main1 ol{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0px;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+    .main1 ol li{
+        list-style-type: none;
+        font-size: .9rem;
+        padding: 10px;
+    }
+    .main1 ol li a{
+        text-decoration: none;
+        color: black;
+    }
+    #open{
+        display: block;
+        cursor: pointer;
+    }
+    #regis{
+        padding: 10px 50px;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media all and (max-width:650px){
+    .main1 ol{
+        padding-left: 0px;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+}
+@media all and (max-width:550px){
+    .main1 ol{
+        padding-left: 0px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    #regis{
+        padding: 10px 20px;
+    }
+}
+@media all and (max-width:400px){
+    .main1 ol{
+        padding-left: 0px;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+}
+/* @media for nav header ends here */
+/* for maincontent */
+.maincontent1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 0 100px;
+}
+.maincontent2{
+    width: 60%;
+    height: 500px;
+    padding-right: 20px;
+}
+.boycontrol1{
+    width: 40%;
+    display: none;
+}
+#boyimage1{
+    width: 100%;
+}
+.boycontrol2{
+    width: 40%;
+    height: 500px;
+}
+#boyimage2{
+    min-width: 60%;
+    max-width: 100%;
+    height: 500px;
+}
+#p1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: -70px;
+}
+#p01{
+    display: none;
+}
+#p2{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#p3, #p4, #p5{
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+    font-size: .9rem;
+}
+#p3, #p4{
+    margin-bottom: -12px;
+}
+#p5{
+    margin-bottom: 40px;
+}
+#p6{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: rgba(255,255,255,.8);
+    background: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+#p6:hover{
+    background: transparent;
+    color: black;
+}
+.imgcontrol{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.imgcontrol1,.imgcontrol2{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+#image1{
+    width: 25%;
+    height: 15px;
+}
+#image2{
+    width: 20%;
+    height: 30px;
+    margin-left: 70px;
+}
+#image3{
+    width: 25%;
+    height: 20px;
+    margin-left: 60px;
+}
+/* for maincontent ends here */
+/* @media for maincontent */
+    @media all and (max-width:920px){
+        #p1,#p2{
+            font-size: 3rem;
+        }
+        #boyimage2{
+            min-width: 80%;
+        }
+        .boycontrol2{
+            width: 50%;
+        }
+    }
+    @media all and (max-width:880px){
+        #p1,#p2{
+            font-size: 2.5rem;
+        }
+        #p1{
+            margin-bottom: -55px;
+        }
+        #boyimage2{
+            min-width: 80%;
+        }
+        .boycontrol2{
+            width: 50%;
+        }
+        .maincontent2{
+            padding-right: 10px;
+        }
+        .maincontent1{
+            padding: 0 50px;
+        }
+    }
+    @media all and (max-width:730px){
+        .maincontent1{
+            padding: 0 10px;
+        }
+    }
+    @media all and (max-width:575px){
+       #p1,#p2{
+           font-size: 2rem;
+       }
+       #p1{
+           margin-bottom: -45px;
+       }
+    }
+    @media all and (max-width:470px){
+        .maincontent1{
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+            flex-direction: column;
+        }
+        .maincontent2{
+            width: 100%;
+            padding-bottom: 0;
+            padding-bottom: -50px;
+        }
+        .imgcontrol{
+            display: flex;
+            margin-top: 50px;
+        }
+        #p01{
+            display: block;
+            font-size: 2.1rem;
+            font-weight: 900;
+            margin-bottom: -5px;
+        }
+        #p1{
+            font-size: 2.1rem;
+            display: none;
+            padding: 0;
+            margin-top:10px;
+            margin-bottom: -10px;
+        }
+        #p2{
+            display: none;
+        }
+        #boyimage1{
+            min-width: 100%;
+            min-height: 400px;
+        }
+        .boycontrol2{
+            display: none;
+        }
+        .boycontrol1{
+            display: block;
+            width: 100%;
+            min-height: 400px;
+        }
+    }
+    @media all and (max-width:380px){
+        #p01{
+            font-size: 2rem;
+        }
+        #boyimage1{
+            min-width: 80%;
+            min-height: 300px;
+        }
+        .boycontrol2{
+            display: none;
+        }
+        .boycontrol1{
+            display: block;
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+    @media all and (max-width:362px){
+        #p01{
+            font-size: 1.8rem;
+        }
+    }
+    @media all and (max-width:325px){
+        #p01{
+            font-size: 1.5rem;
+        }
+        #boyimage1{
+            min-width: 80%;
+            min-height: 300px;
+
+        }
+        .boycontrol2{
+            display: none;
+        }
+        .boycontrol1{
+            display: block;
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+    @media all and (max-width:277px){
+        #p01{
+            font-size: 1.2rem;
+        }
+        #boyimage1{
+            min-width: 70%;
+            min-height: 200px;
+
+        }
+        .boycontrol2{
+            display: none;
+        }
+        .boycontrol1{
+            display: block;
+            width: 100%;
+            min-height: 200px;
+        }
+    }
+        /* for the last images */
+    @media all and (max-width:980px){
+    .imgcontrol{
+        display: flex;
+        margin-top: 50px;
+    }
+    .imgcontrol1,.imgcontrol2{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #image1{
+        width: 28%;
+        height: 15px;
+    }
+    #image2{
+        width: 28%;
+        height: 30px;
+        margin-left: 50px;
+    }
+    #image3{
+        width: 28%;
+        height: 20px;
+        margin-left: 40px;
+    }
+}
+@media all and (max-width:770px){
+    .imgcontrol{
+        display: flex;
+        margin-top: 50px;
+    }
+    .imgcontrol1,.imgcontrol2{
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #image1{
+        width: 28%;
+        height: 15px;
+    }
+    #image2{
+        width: 28%;
+        height: 30px;
+        margin-left: 20px;
+    }
+    #image3{
+        width: 28%;
+        height: 20px;
+        margin-left: 20px;
+    }
+}
+@media all and (max-width:469px){
+    .imgcontrol{
+        display: flex;
+        margin-top: 50px;
+    }
+    .imgcontrol1,.imgcontrol2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        gap: 30px;
+    }
+    #image1{
+        width: 28%;
+        height: 15px;
+    }
+    #image2{
+        width: 28%;
+        height: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #image3{
+        width: 28%;
+        height: 20px;
+        margin-left: 0;
+    }
+}
+/* @media for maincontent ends here */
+
+
