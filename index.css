@@ -144,9 +144,10 @@ font-family: sans-serif;
         right: 0;
         overflow-x:hidden; 
         width: 0%;
-        height: 100vh;
+        height: 100%;
         transition: .5s;
         background: hsl(0, 0%, 90%);
+        justify-content: none;
     }
     .main1::-webkit-scrollbar{
         display: none;
@@ -204,7 +205,7 @@ font-family: sans-serif;
         justify-content: space-between;
     }
 }
-@media all and (max-width:650px){
+@media all and (max-width:650px ){
     .main1 ol{
         padding-left: 0px;
         margin-right: 100px;
@@ -222,6 +223,14 @@ font-family: sans-serif;
     }
 }
 @media all and (max-width:400px){
+    .main1 ol{
+        padding-left: 0px;
+        margin-right: 10px;
+        margin-top: 50px;
+        border:1px solid red;
+    }
+}
+@media all and (max-width:414px){
     .main1 ol{
         padding-left: 0px;
         margin-right: 10px;
@@ -298,28 +307,20 @@ font-family: sans-serif;
     color: black;
 }
 .imgcontrol{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     margin-top: 50px;
     margin-bottom: 0;
 }
-.imgcontrol1,.imgcontrol2{
-    display: flex;
-    align-items: center;
-    width: 40%;
-}
 #image1{
-    width: 25%;
     height: 15px;
 }
 #image2{
-    width: 20%;
     height: 30px;
-    margin-left: 70px;
 }
 #image3{
-    width: 25%;
     height: 20px;
-    margin-left: 60px;
 }
 /* for maincontent ends here */
 /* @media for maincontent */
@@ -381,8 +382,7 @@ font-family: sans-serif;
             padding-bottom: -50px;
         }
         .imgcontrol{
-            display: flex;
-            margin-top: 50px;
+          justify-content: center;
         }
         #p01{
             display: block;
@@ -442,7 +442,6 @@ font-family: sans-serif;
         #boyimage1{
             min-width: 80%;
             min-height: 300px;
-
         }
         .boycontrol2{
             display: none;
@@ -460,7 +459,6 @@ font-family: sans-serif;
         #boyimage1{
             min-width: 70%;
             min-height: 200px;
-
         }
         .boycontrol2{
             display: none;
@@ -471,85 +469,6 @@ font-family: sans-serif;
             min-height: 200px;
         }
     }
-        /* for the last images */
-    @media all and (max-width:980px){
-    .imgcontrol{
-        display: flex;
-        margin-top: 50px;
-    }
-    .imgcontrol1,.imgcontrol2{
-        display: flex;
-        align-items: center;
-        width: 50%;
-    }
-    #image1{
-        width: 28%;
-        height: 15px;
-    }
-    #image2{
-        width: 28%;
-        height: 30px;
-        margin-left: 50px;
-    }
-    #image3{
-        width: 28%;
-        height: 20px;
-        margin-left: 40px;
-    }
-}
-@media all and (max-width:770px){
-    .imgcontrol{
-        display: flex;
-        margin-top: 50px;
-    }
-    .imgcontrol1,.imgcontrol2{
-        display: flex;
-        align-items: center;
-        width: 50%;
-    }
-    #image1{
-        width: 28%;
-        height: 15px;
-    }
-    #image2{
-        width: 28%;
-        height: 30px;
-        margin-left: 20px;
-    }
-    #image3{
-        width: 28%;
-        height: 20px;
-        margin-left: 20px;
-    }
-}
-@media all and (max-width:469px){
-    .imgcontrol{
-        display: flex;
-        margin-top: 50px;
-    }
-    .imgcontrol1,.imgcontrol2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        gap: 30px;
-    }
-    #image1{
-        width: 28%;
-        height: 15px;
-    }
-    #image2{
-        width: 28%;
-        height: 30px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #image3{
-        width: 28%;
-        height: 20px;
-        margin-left: 0;
-    }
-}
 /* @media for maincontent ends here */
 
 
